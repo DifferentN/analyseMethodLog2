@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MethodSequenceUtil {
+	private static final int MainThreadID = 1;
 	public static List<MyMethod> getSequence(String fileName) {
 		ArrayList<MyMethod> callSeq;
 		ArrayList<String> allSeq = new ArrayList<>();
@@ -48,7 +49,8 @@ public class MethodSequenceUtil {
 			if(methodName.startsWith("before: ")) {
 				beforeNum++;
 				String input = methodName.substring("before: ".length(), methodName.length());
-				if(!checkThreadId(input,1)) {
+//                System.out.println("before"+input.substring(0,30));
+				if(!checkThreadId(input,MainThreadID)) {
 					continue;
 				}
 				MyMethod method = new MyMethod(input);
@@ -57,7 +59,8 @@ public class MethodSequenceUtil {
 			}else if(methodName.startsWith("after: ")){
 				afterNum++;
 				String output = methodName.substring("after: ".length(), methodName.length());
-				if(!checkThreadId(output,1)) {
+//				System.out.println("after: "+output.substring(0,30));
+				if(!checkThreadId(output,MainThreadID)) {
 					continue;
 				}
 				MyMethod curM = stack.remove(stack.size()-1);

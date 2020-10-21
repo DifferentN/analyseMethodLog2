@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MyMethod {
-	public String name,methodName,methodCaller;
+	public String name,methodName,methodCaller,packageName;
 	private JSONArray inputJSON;
 	private JSONObject outputJSON;
 	public MyMethod parent;
@@ -20,6 +20,7 @@ public class MyMethod {
 		methodCaller = jsonObject.getString("callerClassName");
 		name = jsonString;
 		methodName = jsonObject.getString("methodName");
+		packageName = jsonObject.getString("packageName");
 //		this.name = jsonObject.getString("callerClassName")+"/"+jsonObject.getString("methodName");
 		childs = new ArrayList<>();
 		if(jsonObject.get("threadId")!=null) {
@@ -54,5 +55,9 @@ public class MyMethod {
 
 	public JSONObject getOutputJSON() {
 		return outputJSON;
+	}
+
+	public String getPackageName() {
+		return packageName;
 	}
 }
