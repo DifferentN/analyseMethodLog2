@@ -15,27 +15,30 @@ import java.util.List;
 public class BuildWorkFlow {
     public static void main(String args[]){
         System.out.println("start time: "+System.currentTimeMillis());
-        List<MyMethod> callSeq1 = MethodSequenceUtil.getSequence("C:/Users/17916/Desktop/newVersionAPI/anki/writeCard/methodLog.txt");
-//        List<MyMethod> callSeq2 = MethodSequenceUtil.getSequence("C:/Users/17916/Desktop/newVersionAPI/mafengwo/methodLog-2.txt");
+        List<MyMethod> callSeq1 = MethodSequenceUtil.getSequence("C:/Users/17916/Desktop/newVersionAPI/lanrentingshu/searchNovel/methodLog.txt");
+//        List<MyMethod> callSeq2 = MethodSequenceUtil.getSequence("C:/Users/17916/Desktop/newVersionAPI/lanrentingshu/searchNovel/methodLog-2.txt");
+//        List<MyMethod> callSeq3 = MethodSequenceUtil.getSequence("C:/Users/17916/Desktop/newVersionAPI/lanrentingshu/searchNovel/methodLog-3.txt");
 //        System.out.println(callSeq1.size());
         List<MyEvent> events1 = GenerateMyEventUtil.generateMyEventList(callSeq1);
 //        List<MyEvent> events2 = GenerateMyEventUtil.generateMyEventList(callSeq2);
+//        List<MyEvent> events3 = GenerateMyEventUtil.generateMyEventList(callSeq3);
 
         System.out.println(events1.size());
 //        System.out.println(events2.size());
         WorkItem workFlow = createWorkFlow(events1);
 //        updateWorkFlow(workFlow,events2);
+//        updateWorkFlow(workFlow,events3);
 
-        String userInput1[] = new String[]{"Front","猫"};
-        String userInput2[] = new String[]{"Back","cat"};
+        String userInput1[] = new String[]{"小说名称","都市"};
+//        String userInput2[] = new String[]{"小说名称","大钦服"};
         List<String[]> userInputList = new ArrayList<>();
         userInputList.add(userInput1);
-        userInputList.add(userInput2);
+//        userInputList.add(userInput2);
 
         assignUserInputTag(workFlow,userInputList);
 
         JSONObject workFlowJSON = workFlow.toJSONObject();
-        MyFileUtil.writeJSONObject("writeCard.txt",workFlowJSON);
+        MyFileUtil.writeJSONObject("searchNovel.txt",workFlowJSON);
         System.out.println("end time: "+System.currentTimeMillis());
     }
     private static void assignUserInputTag(WorkItem workItem,List<String[]> tagValues){

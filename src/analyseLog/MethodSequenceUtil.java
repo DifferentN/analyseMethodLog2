@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MethodSequenceUtil {
-	private static final int MainThreadID = 1;
+	private static final int MainThreadID = 2;
 	public static List<MyMethod> getSequence(String fileName) {
 		ArrayList<MyMethod> callSeq;
 		ArrayList<String> allSeq = new ArrayList<>();
@@ -21,8 +21,9 @@ public class MethodSequenceUtil {
 			}
 		}
 		try {
-			FileReader fileReader = new FileReader(file);
-			BufferedReader reader = new BufferedReader(fileReader);
+//			FileReader fileReader = new FileReader(file);
+			InputStreamReader inputStreamReader = new InputStreamReader(new FileInputStream(file),"UTF-8");
+			BufferedReader reader = new BufferedReader(inputStreamReader);
 			String line = null;
 			while((line=reader.readLine())!=null) {
 				allSeq.add(line);

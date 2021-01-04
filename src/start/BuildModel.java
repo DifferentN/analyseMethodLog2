@@ -13,12 +13,12 @@ import java.util.*;
 
 public class BuildModel {
     public static void main(String args[]){
-        List<MyMethod> callSeq = MethodSequenceUtil.getSequence("C:/Users/17916/Desktop/newVersionAPI/fanqienovel/methodLog.txt");
+        List<MyMethod> callSeq = MethodSequenceUtil.getSequence("C:/Users/17916/Desktop/newVersionAPI/shipudaquan/searchFood/methodLog.txt");
         System.out.println("start generate API");
         List<MyEvent> events = GenerateMyEventUtil.generateMyEventList(callSeq);
         System.out.println("end generate API");
 
-        String userInput[] = new String[]{"小说名称","最强"};
+        String userInput[] = new String[]{"食物名称","油条"};
         List<String[]> userInputList = new ArrayList<>();
         userInputList.add(userInput);
         assignUserInputTag(userInputList,events);
@@ -27,7 +27,7 @@ public class BuildModel {
         for(MyEvent myEvent:events){
             jsonArray.add(myEvent.toJSONObject());
         }
-        generateApi(jsonArray,"searchNovel");
+        generateApi(jsonArray,"searchFood");
     }
     private static void assignUserInputTag(List<String[]> tagValues,List<MyEvent> events){
         for(MyEvent event:events){

@@ -6,7 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d88f2c1-5fd0-4533-bf3e-ada6979c1b64" name="Default Changelist" comment="" />
+    <list default="true" id="5d88f2c1-5fd0-4533-bf3e-ada6979c1b64" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/exhibit/GenerateAPIForExhibit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exhibit/ShowInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/analyseMethodLog2_jar/analyseMethodLog2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/analyseMethodLog2_jar/analyseMethodLog2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/analyseMethodLog2/META-INF/analyseMethodLog2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/analyseMethodLog2/analyseLog/MethodSequenceUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/analyseMethodLog2/analyseLog/MethodSequenceUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/analyseMethodLog2/start/BuildModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/analyseMethodLog2/start/BuildModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/analyseMethodLog2/start/BuildWorkFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/analyseMethodLog2/start/BuildWorkFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchNovel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/searchNovel.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analyseLog/MethodSequenceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyseLog/MethodSequenceUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/start/BuildModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/start/BuildModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/start/BuildWorkFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/start/BuildWorkFlow.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +184,15 @@
       <workItem from="1602644323593" duration="6030000" />
       <workItem from="1602730169718" duration="6924000" />
       <workItem from="1602809354259" duration="2783000" />
+      <workItem from="1603244671438" duration="81000" />
+      <workItem from="1608644973716" duration="2511000" />
+      <workItem from="1608708594238" duration="5573000" />
+      <workItem from="1608776002846" duration="1332000" />
+      <workItem from="1609033801427" duration="3298000" />
+      <workItem from="1609054853920" duration="8901000" />
+      <workItem from="1609206159787" duration="1243000" />
+      <workItem from="1609659765372" duration="5060000" />
+      <workItem from="1609729016604" duration="657000" />
     </task>
     <servers />
   </component>
