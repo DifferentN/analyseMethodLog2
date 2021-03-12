@@ -15,7 +15,7 @@ import java.util.List;
 public class BuildWorkFlow {
     public static void main(String args[]){
         System.out.println("start time: "+System.currentTimeMillis());
-        List<MyMethod> callSeq1 = MethodSequenceUtil.getSequence("C:/Users/17916/Desktop/newVersionAPI/lanrentingshu/searchNovel/methodLog.txt");
+        List<MyMethod> callSeq1 = MethodSequenceUtil.getSequence("C:/Users/17916/Desktop/newVersionAPI/mianfeiNovel/searchNovel/methodLog.txt");
 //        List<MyMethod> callSeq2 = MethodSequenceUtil.getSequence("C:/Users/17916/Desktop/newVersionAPI/lanrentingshu/searchNovel/methodLog-2.txt");
 //        List<MyMethod> callSeq3 = MethodSequenceUtil.getSequence("C:/Users/17916/Desktop/newVersionAPI/lanrentingshu/searchNovel/methodLog-3.txt");
 //        System.out.println(callSeq1.size());
@@ -29,7 +29,7 @@ public class BuildWorkFlow {
 //        updateWorkFlow(workFlow,events2);
 //        updateWorkFlow(workFlow,events3);
 
-        String userInput1[] = new String[]{"小说名称","都市"};
+        String userInput1[] = new String[]{"小说名称","读者"};
 //        String userInput2[] = new String[]{"小说名称","大钦服"};
         List<String[]> userInputList = new ArrayList<>();
         userInputList.add(userInput1);
@@ -38,7 +38,7 @@ public class BuildWorkFlow {
         assignUserInputTag(workFlow,userInputList);
 
         JSONObject workFlowJSON = workFlow.toJSONObject();
-        MyFileUtil.writeJSONObject("searchNovel.txt",workFlowJSON);
+        MyFileUtil.writeJSONObject("searchMusic.txt",workFlowJSON);
         System.out.println("end time: "+System.currentTimeMillis());
     }
     private static void assignUserInputTag(WorkItem workItem,List<String[]> tagValues){

@@ -7,17 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d88f2c1-5fd0-4533-bf3e-ada6979c1b64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/exhibit/GenerateAPIForExhibit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exhibit/ShowInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/analyseMethodLog2_jar/analyseMethodLog2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/analyseMethodLog2_jar/analyseMethodLog2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/analyseMethodLog2/META-INF/analyseMethodLog2.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/analyseMethodLog2/analyseLog/MethodSequenceUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/analyseMethodLog2/analyseLog/MethodSequenceUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/analyseMethodLog2/start/BuildModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/analyseMethodLog2/start/BuildModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/analyseMethodLog2/start/BuildWorkFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/analyseMethodLog2/start/BuildWorkFlow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searchNovel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/searchNovel.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyseLog/MethodSequenceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyseLog/MethodSequenceUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/start/BuildModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/start/BuildModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/start/BuildWorkFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/start/BuildWorkFlow.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -192,7 +185,13 @@
       <workItem from="1609054853920" duration="8901000" />
       <workItem from="1609206159787" duration="1243000" />
       <workItem from="1609659765372" duration="5060000" />
-      <workItem from="1609729016604" duration="657000" />
+      <workItem from="1609729016604" duration="1260000" />
+      <workItem from="1610164228746" duration="1748000" />
+      <workItem from="1610358651559" duration="670000" />
+      <workItem from="1610681829946" duration="177000" />
+      <workItem from="1612322710450" duration="8117000" />
+      <workItem from="1612411841677" duration="8568000" />
+      <workItem from="1613307769791" duration="863000" />
     </task>
     <servers />
   </component>

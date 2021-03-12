@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MethodSequenceUtil {
-	private static final int MainThreadID = 2;
+	private static final int MainThreadID = 1;
 	public static List<MyMethod> getSequence(String fileName) {
 		ArrayList<MyMethod> callSeq;
 		ArrayList<String> allSeq = new ArrayList<>();
